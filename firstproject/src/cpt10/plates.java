@@ -1,15 +1,15 @@
-/* Header 
-A program used to display images in a GUI. This program first shows
-the unbroken plates and prompts the user to play the application.
-Upon pressing play, the system randomly selects how many plates are 
-broken, this action is repeated every time the user presses the button.
-This system also shows a prize correlating to how many plates are 
-broken.
+/* Header:
+ * Author: Bennett Pick 
+ * Title: Break a Plate  
+Purpose:
+To create a graphical user interface that displays images. The user will
+be prompted to play by clicking a button. The user can press this button to 
+randomly change the image between two presets along with another image
+acting as a prize which correlates to how many plates are broken. 
+ */
 
 
-
-*/
-package firstproject;
+package cpt10;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;

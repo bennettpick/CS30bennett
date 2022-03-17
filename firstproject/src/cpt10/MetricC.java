@@ -1,12 +1,16 @@
-/* Header
+/* Header:
+ * Author: Bennett Pick 
+ * Title: Metric Conversion 
+Purpose:
+A graphical user interface that allows a user to select preset options
+which display the unit conversion between different metric units. The 
+user will be prompted under a drop down menu to select the unit they
+want to pick. The conversion will then be shown after the user selects
+their pick. 
+ */
 
-Creates a java application that converts metric units. The is prompted
-for these options under a GUI. Once the user selects a prompt, the user
-is given the conversion as a decimal. After, the user can repeat the
-process by selecting another conversion.
 
-*/
-package firstproject;
+package cpt10;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
