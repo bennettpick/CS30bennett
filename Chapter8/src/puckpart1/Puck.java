@@ -6,7 +6,7 @@
 		public class Puck extends Disk 
 		{
 			private double weight;
-			
+			//
 			//Puck constructor
 			public Puck(double r, double t, double w) 
 			{

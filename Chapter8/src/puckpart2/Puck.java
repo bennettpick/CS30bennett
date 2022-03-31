@@ -11,7 +11,7 @@ public class Puck extends Disk implements Comparable<Object>
 		super(r, t); //retrieves r and t variables from the super class Disk
 		weight = w;
 	}
-	
+	//
 	//Method for setting a new weight for puck.
 	public void setWeight(double newWeight) 
 	{

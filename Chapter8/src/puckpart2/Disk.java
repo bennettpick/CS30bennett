@@ -6,7 +6,7 @@ public class Disk extends Circle
 		{
 			private double thickness;
 	
-					
+			//		
 	public Disk(double r, double t) 
 		{
 	super(r);

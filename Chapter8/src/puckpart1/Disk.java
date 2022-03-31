@@ -7,7 +7,7 @@
 		{
 			private double thickness;
 	
-					
+			//		
 	public Disk(double r, double t) 
 		{
 	super(r);

@@ -15,7 +15,7 @@ public class Minivan extends Vehicle{
 	public boolean getSlidingDoor() {
 		
 		
-		
+		//
 		
 		return(sliderDoor);
 	}

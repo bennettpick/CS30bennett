@@ -1,6 +1,6 @@
 package UEmployee;
 public class Faculty extends UEmployee {
-
+//
 	
 	private String department;
 	
@@ -20,7 +20,7 @@ public class Faculty extends UEmployee {
 	
 	
 	
-	
+	//
 	
 }
 

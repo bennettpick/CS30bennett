@@ -20,7 +20,7 @@ public class VehicleTester {
 				System.out.println("The car " + mazda.isCivicString());
 				
 				System.out.println("");
-				
+			//	
 		Truck ford  = new Truck(2, (double) 2, false, "grey", "Ford", 2, true);
 		System.out.println("Ford");
 		System.out.println("The number of doors is " + ford.getDoorNumber());

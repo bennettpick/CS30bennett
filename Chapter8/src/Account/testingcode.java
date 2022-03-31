@@ -5,7 +5,7 @@ public class testingcode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated
-		
+	//	
 		
 		double get, getPA;
 

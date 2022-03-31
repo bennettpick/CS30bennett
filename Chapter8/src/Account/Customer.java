@@ -3,7 +3,7 @@ public class Customer {
 
 private String firstName, lastName, street, city, province, zip;
 		
-	
+	//
 	
 	 // constructor class
 	 // pre: none

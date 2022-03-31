@@ -2,7 +2,7 @@ package puckpart2;
 
 public class Hockey extends Disk
 {
-
+//
 	public Hockey(double r, double t) {
 		super(r, t);
 		// TODO Auto-generated constructor stub

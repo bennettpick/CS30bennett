@@ -25,7 +25,7 @@ public class Vehicle { //the class that is sent to the others
 	
 	//how the data is entered 
 	public Vehicle(int doorNUM, Double wheelD, boolean full, String col, String comp, int seat) {
-		
+		//
 		doorNumber = doorNUM;
 		wheelDiamter = wheelD;
 		fuildFull = full;

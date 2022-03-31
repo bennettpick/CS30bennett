@@ -11,7 +11,7 @@ public class Car extends Vehicle {
 		// Initialize new variable 
 	}
 
-	
+	//
 	
 	public boolean isCivic() {
 		return(isCiv);
