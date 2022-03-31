@@ -2,8 +2,7 @@
 		
 		package puckpart2;
 
-		
-		public class Disk extends Circle 
+public class Disk extends Circle 
 		{
 			private double thickness;
 	
