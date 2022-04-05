@@ -3,9 +3,7 @@
  * Author: Bennett
  * Purpose: A java application that simulates an account balance and the amount you can withdraw with and without being taxed.
  * The application makes both a personal and business account.
- */
-
-
+*/
 
 package Account;
 import java.util.Scanner;

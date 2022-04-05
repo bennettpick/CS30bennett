@@ -1,3 +1,11 @@
+/*TItle: UEmployee
+ * Author: Bennett Pick
+ * Purpose: A java application that stores and displays 
+ attributes of vehicles. These can be subcategories of trucks
+ cars or minivans. Upon storing the data, the 
+ application will print out what is stored/ 
+ */
+
 
 
  package Vehicles;

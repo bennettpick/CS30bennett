@@ -1,3 +1,11 @@
+/*TItle: UEmployee
+ * Author: Bennett Pick
+ * Purpose: A java application that display statistics for 
+ employees such as name, salary, position and title.
+  
+ */
+
+
 package UEmployee;
 import java.util.Scanner;
 
