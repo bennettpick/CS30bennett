@@ -23,11 +23,11 @@ public class UEmployeeTester {
 		
 		
 		
-			System.out.println("testing just UEmployee\n");
-			UEmployee Bennett = new UEmployee("Bennett", 35000); 
+			
+			UEmployee Bennett = new UEmployee("Bennett", 35000); // first employee 
 		
-			System.out.println("Emyployees name: " + Bennett.getName()); 
-			System.out.println("Emyployees Salary: " + Bennett.getSalary()); 
+			System.out.println("Emyployees name: " + Bennett.getName()); //prints name  
+			System.out.println("Emyployees Salary: " + Bennett.getSalary()); //prints salary  
 		
 		
 		
@@ -36,11 +36,11 @@ public class UEmployeeTester {
 		
 		//
 			
-			Faculty Ben = new Faculty("Ben", 500000, "Sales");
+			Faculty Ben = new Faculty("Ben", 500000, "Sales"); //new employee 
 			
-			System.out.println("Emyployees name: " + Ben.getName()); // getting name
-			System.out.println("Emyployees Salary: " + Ben.getSalary()); //getting salary
-			System.out.println("Emyployees Department: " + Ben.getDepartment()); // getting department
+			System.out.println("Emyployees name: " + Ben.getName()); 
+			System.out.println("Emyployees Salary: " + Ben.getSalary());
+			System.out.println("Emyployees Department: " + Ben.getDepartment()); // their department
 		
 			System.out.println("Change department to: ");
 			dep = input.nextLine(); // getting the next string from user
@@ -54,10 +54,10 @@ public class UEmployeeTester {
 			
 			Staff Brennen = new Staff("Emyployees Salary",  750000.00, "marketing", " manager");
 		
-			System.out.println("Employees Name: " + Brennen.getName()); // getting name
-			System.out.println("Emyployees Salary: " + Brennen.getSalary()); //getting salary
-			System.out.println("Employees Department: " + Brennen.getDepartment()); // getting department
-			System.out.println("Employees Title: "+ Brennen.getTitle());
+			System.out.println("Employees Name: " + Brennen.getName()); 
+			System.out.println("Emyployees Salary: " + Brennen.getSalary());
+			System.out.println("Employees Department: " + Brennen.getDepartment());
+			System.out.println("Employees Title: "+ Brennen.getTitle()); // title 
 			
 			System.out.println("Change Department to: ");
 			dep1 = input.nextLine(); 
@@ -68,7 +68,7 @@ public class UEmployeeTester {
 			System.out.println("change title to: ");
 			ti = input.nextLine(); 
 			Brennen.setTitle(ti);
-			System.out.println("new title is: " + Brennen.getTitle() );
+			System.out.println("new title is: " + Brennen.getTitle() );//new title 
 			
 			input.close(); 
 		
