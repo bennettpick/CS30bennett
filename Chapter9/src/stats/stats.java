@@ -5,10 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
-/* Author: Bennett Pick 
- * Purpose: To create a system that reads numbers in a file and then displays the highest, lowest and average
- * 
- */
+
 
 public class stats {
 
@@ -20,33 +17,33 @@ public class stats {
 		//
  
 							//	{
-				File scores = new File("../Chapter11/src/stats/stats.txt"); // file system reads
+				File scores = new File("../Chapter11/src/stats/stats.txt");
 				FileReader in;
 				BufferedReader readFile;
 			 int NumS=0;
 				 int arrycount = 0;
-				 int checker =0;
+				 int goo1 =0;
 				String score;
-				double check;
+				double goo;
 			
 				int count = 1;
 				try {
 				 in = new FileReader(scores);
 				 readFile = new BufferedReader(in); 
-					int	 dataArr[] = new int[4]; // start of array, 4 is how many terms there are 
+					int	 dataArr[] = new int[4];
 					
-				while ((score = readFile.readLine()) != null ) { // starts the lpoop 
+				while ((score = readFile.readLine()) != null ) {
 
-					 if(count % 2 ==0 ) { //if even
+					 if(count % 2 ==0 ) { //if numScores is even
 						 
-						 check = Double.parseDouble(score); //adding to the total score if the line is a score line
+						 goo = Double.parseDouble(score); //adding to the total score if the line is a score line
 						 
-						 checker += Double.parseDouble(score);
+						 goo1 += Double.parseDouble(score);
 						 
 						 
-						 System.out.println(score);  // checks number scores 
+						 System.out.println(score); 
 						 NumS += 1;
-						 dataArr [arrycount] = (int)check; 
+						 dataArr [arrycount] = (int)goo; 
 						 arrycount += 1;
 							
 					 }
@@ -63,10 +60,10 @@ readFile.close();
 in.close();
 				
 
-					System.out.println("minimum:" + dataArr[0]); // prints minimum by reading the array 
-					System.out.println("maximum:" + dataArr[3]);  // prints maximum by reading the array 
-					count = checker / arrycount;
-					System.out.println("Average is " +  count); // prints average 
+					System.out.println("minimum:" + dataArr[0]); 
+					System.out.println("maximum:" + dataArr[3]); 
+					count = goo1 / arrycount;
+					System.out.println("Average is " +  count);
 					Arrays.sort(dataArr);
 				 } 
 				 

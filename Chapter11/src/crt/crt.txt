@@ -1,0 +1,12 @@
+Files are only permen+atly stored data 
+
+3) There has to be a .. before the required path 
+4a)	 catch (IOException e) {
+			 System.out.println("Problem reading file.");
+			 System.err.println("IOException: " + e.getMessage());
+		 }
+b) 	 catch (IOException e) {
+			 System.out.println("Could not create file path.");
+			 System.err.println("IOException: " + e.getMessage());
+		 }
+5)	 System.err.println("IOException: " + e.getMessage());

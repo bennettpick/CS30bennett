@@ -1,9 +1,5 @@
 package findAndReplace;
-/* Author Bennett Pick  
- * Purpose: A system that reads a file, then lets you search for a term which the user will be prompted to replace.
- * This replaced term will be sent to a new file along with the rest of the original file 
- * 
- */
+
 //
 	
 	
@@ -23,8 +19,6 @@ package findAndReplace;
 	public static void main(String[] args) throws IOException 
 	   
 	   {
-		   
-		   
 		   System.out.print("Enter the term you wish to find: ");
 	      File fl = new File("../Chapter11/zzz.txt"); 
 	      String[] words = null;  
@@ -32,9 +26,9 @@ package findAndReplace;
 	      FileReader fr = new FileReader(fl);  
 	      BufferedReader br = new BufferedReader(fr); 
 	  	Scanner input = new Scanner(System.in);
-	     String userI ;
+	      String userI ;
 	      String input1 ;
-	  
+	     int counter = 0;
 	     input1 = input.nextLine();
 	//     String line = "";
 	     
@@ -48,16 +42,16 @@ package findAndReplace;
 	    	  
 	    
 	      {
-	   words=s.split(" ");   // searches for words in the file 
-	  
-	          for (String word : words) // checks words 
+	   words=s.split(" ");  
+	          for (String word : words) 
 	          {
 	             if (word.equals(input1))   
 	                 {
-	            	     count ++;    
+	            	   counter += 1;
+	                   count ++;    
 	             
 	                 }
-	         
+	          
 	            	 
 	          }
 	      }
@@ -70,7 +64,7 @@ package findAndReplace;
 	      if(count != 0)  
 	      {
 	        System.out.println("' " + input1 + " ' is present "+count+ " times in the file");
-	     // thid dtatment does not work with multipe words in the phrase, however they will still be found and replaced 
+	     // 
 	      }
 	      else
 	      {
@@ -80,9 +74,9 @@ package findAndReplace;
 	      
 
 	      
-	  userI = input.nextLine();
+	     userI = input.nextLine();
 			System.out.println("enter what you want to replace " + input1 + " with: ");
-			replace = input.nextLine(); // Initializes replace 
+			replace = input.nextLine();
 		
 			
 			
@@ -92,18 +86,19 @@ package findAndReplace;
 			fr = new FileReader(fl);
 			br = new BufferedReader(fr);
 			
-		File textFile_replaced = new File("../Chapter11/yyy.txt" ); // sends to this file 
-		
+		//	File textFile_replaced = new File("../Chapter11/yyy.txt" + fl );
+		//	  File fl = new File("../Chapter11/zzz.txt"); 
+			File textFile_replaced = new File("../Chapter11/yyy.txt" );
 			out = new FileWriter(textFile_replaced);
 			writeF = new BufferedWriter(out);
 			
 			while ((s = br.readLine()) != null ) {
 			
-				s = s.replaceAll(input1, replace); // writes and replaces the ling 
+				s = s.replaceAll(input1, replace);
 			writeF.write(s);
 				writeF.newLine(); //put a new line chracter in
 				
-					System.out.println(input1+ " has been replaced by " + replace ) ;
+					System.out.println(input1 + " has been replaced by " + replace ) ;
 			}
 	
 			writeF.close();
@@ -123,8 +118,8 @@ package findAndReplace;
 		
 	
 
-	       //  fr.close();
-	     	//input.close();
+	         fr.close();
+	     	input.close();
 	}
 	   }
 	}

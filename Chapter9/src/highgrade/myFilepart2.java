@@ -1,11 +1,11 @@
-package myFile;
+package highgrade;
 import java.io.*; 
 import java.util.Scanner;
 public class myFilepart2 {
 	
 
 	public static void main(String[] args) {
-		 File textFile = new File("../Chapter11/src/myFile/myFile2.txt");
+		 File textFile = new File("zzz.txt");
 	
 			System.out.println("Your file is " + textFile);	
 			System.out.println("If you want to delete this file, type delete");
