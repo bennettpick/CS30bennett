@@ -1,3 +1,7 @@
+/*
+ * Author Bernnett Pick
+ * Purpose: Sortgrades to find the highest 
+ */
 package highgrade;
 
 import java.util.Scanner;
@@ -9,15 +13,15 @@ public class hgrade {
 	public static void main(String[] args) {
 		ArrayList<Integer> grades = new ArrayList<Integer>();
 		
-		System.out.println("Enter 5 student grades between 0 and 100: ");
-		Scanner input = new Scanner(System.in);
+		System.out.println("Enter 5 student grades between 0 and 100: "); // entering the grasdes 
+		Scanner input = new Scanner(System.in); // all user inputs
 		grades.add(0, input.nextInt());
 		grades.add(1, input.nextInt());
 		grades.add(2, input.nextInt());
 		grades.add(3, input.nextInt());
 		grades.add(4, input.nextInt());
 	
-		
+		//array int and sort 
 
 		for (int i = 0; i < 6; i++) {
 			for (int j = 0; j < grades.size()-1; j++) {
@@ -29,7 +33,7 @@ public class hgrade {
 				}
 			}
 		}
-		int print = 0 ;
+		int print = 0 ; //print 
 		System.out.println("The highest grade is: " + grades.get(print));
 	input.close();
 		}

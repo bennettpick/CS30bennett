@@ -1,15 +1,29 @@
 package crt;
 public class crt {
 	/*
-	 * 1) Center and Radius 
-	 * 2) The same name as the class
-	 * 3) Public allows code the be accessed outside or inside the class.
-	 * Private only lets the code be used inside the class it is established
-	 * 4) False, because the first line (Circle dot = new Circle(2);)
-	 * sets the radius that conflicts with the next line  
-	 * 6) A class sets up the objects. 
-	 * Objects allow coders to use the class to create variables 
-	 */
+1: 2
+2: int[] wasd = new int[20];
+3: double[] heights = {1.65,2.15,4.95}
+4:for (int n = 0; n < grades.length; n++)
+{
+System.out.println(grades[n]);
+}
+5:
+a) for (int n = 0; n < grades.length -1 ; n++)
+{
+int grade1 = grades.get(n);
+grades.set(n+1, grade1);
+}
+b) for (int n = 1; n < grades.length; n++)
+{
+int grade1 = grades.get(n);
+grades.set(n-1, grade1);
+}
+6: passing a member of an array is counted as whatever data type the member is,
+whereas passing an array is counted as passing an array data type.
+7: they are needed because it is an indicator that tells you the index is out of bound (-1)
+8: i
+(because i is the fourth element, with ide of the string)
 //
 }
 	
